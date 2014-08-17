@@ -1,4 +1,10 @@
-# find the last position of the last occurence of substring s in str
+# Finds the last position of the last occurence of substring s in str
+# Input:
+# str - string
+# s - string, to be searched in str
+#
+# Output:
+# last_pos - number, last position of searched string
 def find_last(str,s):
 	last_pos = -1
 	while True:
@@ -7,8 +13,3 @@ def find_last(str,s):
 			# return the previous position
 			return last_pos
 		last_pos = pos
-
-# test find_last
-print(find_last("find me if you find me yet","me"))
-print(find_last("111111111", "1")) 
-print(find_last('aaaaa', 'aa'))

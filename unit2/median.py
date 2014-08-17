@@ -1,4 +1,5 @@
-# Find the median of 3 numbers
+# Finds the median of 3 numbers using two helper methods
+# bigger and biggest
 def bigger(a,b):
 	if a>b:
 		return a
@@ -15,10 +16,4 @@ def median(a,b,c):
 	elif big == b:
 		return bigger(a,c)
 	else:
-		return bigger(b,c)
-
-# test cases
-print(median(1,4,6))
-print(median(2,2,2))
-print(median(7,8,7))
-print(median(2,2,1))
+		return bigger(a,b)
